@@ -1,0 +1,53 @@
+﻿#ChatBox {
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    display: none;
+}
+
+    #ChatBox.show {
+        display: block;
+    }
+
+#MessagePanel {
+    padding-left: 15px;
+}
+
+#Messages {
+    list-style-type: none;
+    text-align: left;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    height: 285px;
+    overflow-y: scroll;
+}
+
+    #Messages li {
+        padding-bottom: 15px;
+    }
+
+        #Messages li .name {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        #Messages li .time {
+            color: #999;
+        }
+
+        #Messages li .message {
+            padding-top: 5px;
+        }
+
+#SendNewMessage {
+    position: absolute;
+    width: 270px;
+}
+
+    #SendNewMessage #MessageInput {
+        width: 200px;
+    }

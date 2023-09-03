@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    #chatMessage {
+        list-style-type: none;
+        text-align: left;
+        height: 400px;
+        overflow-y: scroll;
+        margin-bottom: 0;
+    }
+        #chatMessage li .name {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        #chatMessage li .time {
+            color: #999;
+        }
+
+        #chatMessage div.message {
+            padding-bottom: 15px;
+        }
+
+</style>
+
+
+
+
+<h1>پشتیبانی باگتو</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <ul id="chatMessage" class="card-body">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="answerForm" class="form-inline mt-2">
+                        <input id="answerText" type="text" placeholder="پاسخ خود را بنویسید" class="form-control" />
+                        <button type="submit" class="btn btn-success">ارسال پاسخ</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-4">
+            <div id="roomList" class="list-group">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts
+{
+    <script src="~/js/SupportSignalRService.js"></script>
+}

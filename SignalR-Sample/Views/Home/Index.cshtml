@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "سایت آموزشی";
+}
+
+<div class="text-center" style="background-color:darkgrey;min-height:500px">
+    <h1 class="display-4">خوش آمدید</h1>
+    <p>application<a href="#">chat app</a>.</p>
+</div>
+
+
+<div class="card" id="ChatBox">
+    <div class="card-header">
+        <b>پشتیبانی آنلاین</b>
+    </div>
+    <div id="MessagePanel">
+        <ul id="Messages">
+
+        </ul>
+
+
+        <div id="SendNewMessage">
+            <form id="NewMessageForm" class="row">
+                <input id="MessageInput" 
+                       class="form-control col-md-8 col-sm-8"
+                       placeholder="پیام خود را وارد کنید..." />
+                <button class="btn btn-success col-md-4 col-md-4">
+                    ارسال
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
